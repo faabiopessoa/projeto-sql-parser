@@ -1,0 +1,128 @@
+.block-container {
+    max-width: 1480px;
+    padding-top: 1.4rem;
+    padding-bottom: 2.5rem;
+}
+
+section[data-testid="stSidebar"] {
+    background: #0f1a2b;
+    border-right: 1px solid #2b3a52;
+}
+
+.app-header {
+    align-items: center;
+    background: linear-gradient(120deg, #15345d, #5b21b6);
+    border: 1px solid #5b63b7;
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    padding: 1.25rem 1.5rem;
+}
+
+.app-header h1 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.app-header p {
+    color: #e0e7ff;
+    margin: 0.3rem 0 0;
+}
+
+.status-pill {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    font-weight: 700;
+    padding: 0.45rem 0.8rem;
+    white-space: nowrap;
+}
+
+.pipeline {
+    align-items: center;
+    display: flex;
+    gap: 0.45rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.pipeline-step {
+    background: #142a46;
+    border: 1px solid #315da8;
+    border-radius: 10px;
+    color: #dbeafe;
+    flex: 1;
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.pipeline-arrow {
+    color: #94a3b8;
+    font-weight: 800;
+}
+
+div[data-testid="stMetric"] {
+    background: #121d30;
+    border: 1px solid #2b3a52;
+    border-radius: 14px;
+    min-height: 108px;
+    padding: 0.75rem 0.9rem;
+}
+
+.plan-step {
+    align-items: flex-start;
+    background: #121d30;
+    border: 1px solid #2b3a52;
+    border-left: 4px solid #60a5fa;
+    border-radius: 12px;
+    display: flex;
+    gap: 0.85rem;
+    margin-bottom: 0.65rem;
+    padding: 0.8rem 1rem;
+}
+
+.plan-step > span {
+    align-items: center;
+    background: #1d4ed8;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex: 0 0 2rem;
+    font-weight: 800;
+    height: 2rem;
+    justify-content: center;
+}
+
+.plan-step strong,
+.plan-step small {
+    display: block;
+}
+
+.plan-step small {
+    color: #a9b7cb;
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 850px) {
+    .app-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .pipeline {
+        align-items: stretch;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pipeline-arrow {
+        display: none;
+    }
+}
